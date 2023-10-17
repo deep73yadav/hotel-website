@@ -1,0 +1,285 @@
+/* ----------------------------------------Query Form------------------------------------ */
+.form-container-div{
+/* height:100%; */
+width: 100%;
+border-radius: 15px;
+padding-top: 20px;
+}
+.input-field{
+  border-radius: 8px;
+}
+/* --------------------------------------------------------------------------------- */
+.section-title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.section-title h4{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.section-title div{
+    width: 5rem;
+    height: 5px;
+    margin: 0 auto;
+    background-color: black;
+}
+.services{
+    padding: 5rem 0;    
+    background-color: rgb(245, 241, 241);
+    text-align: center;
+}
+.services-center{
+    width: 90vw;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(255px,1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 50px;
+}
+.services span{
+    display: inline-block;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.services h6{
+    text-transform: capitalize;
+}
+.services p{
+    width: 80%;
+    margin:0 auto;
+}
+/* ---------------------------------------Link---------------------------------------------------- */
+.link-btn {
+    display: inline-block;
+    text-decoration: none;   
+    padding: 0.4rem 0.9rem;
+    border: 3px solid black;   
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .link-btn:hover {
+    /* background: transparent; */
+    font-size: 22px;
+  }
+  .loading{   
+    position: absolute;
+    width: 50%;
+    height: 300px;    
+   left: 25%;   
+    top: 25%;
+  }
+/*------------------------------------ Feature Rooms----------------------------------------------- */
+.filter-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin:20px 100px 0px 100px;
+  height: 50px;
+}
+
+
+.input-search input{ 
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  height: 50px;
+ width: 100%;
+  border-radius: 30px;
+  padding-left: 10px;
+  
+}
+.featured-rooms {
+    padding: 3rem 0;
+  }
+  .featured-rooms-center {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 40px;
+  }
+  
+  .img-container {
+    position: relative;
+  }
+  .img-container img {
+    width: 100%;
+    display: block;    
+  }
+  .price-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.3rem 0.6rem 0.5rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 0.5rem;
+    text-align: center;    
+  }
+  .price-top h6 {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 300;    
+  }
+  .room-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(0);
+    transition: all 0.3s linear;
+    font-weight: 500;
+    background-color: lightgray;
+  }
+  /* .img-container:hover {
+    background: rgba(249, 247, 247, 0.8);
+    opacity: 1;    
+  } */
+  .img-container:hover img {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .img-container:hover .room-link {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .room-info {
+    background:darkgray;
+    text-transform: capitalize;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: var(--mainSpacing);
+  }
+  /* ------------------------------------Featurerooms----------------------------------------- */
+  .main-container{
+    min-height: 100vh;
+  }
+  .list-table-div{    
+    /* margin: 10px 20px 0px 20px; */
+    height: 60px;
+    /* background-color: azure; */
+    margin-top: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* justify-content: center; */
+  }  
+  .list-table-div .icon{
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+  }
+  .list-table-div .icon i{
+    margin-left: 10px;
+    color:rgb(118, 116, 116) ;
+  }
+  .list-table-div .icon .active{    
+    color:rgb(82, 82, 241);
+  }
+  @media (max-width: 767px) {
+    .icon{
+       display: none;
+    }
+}
+  .list-container{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 30px;
+    /* height: 500px; */
+  }
+  
+  .list-container img{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .list-container .details{
+    margin-left: 40px;
+    width: 400px;    
+  }
+  .list-container .details p{    
+      line-height: 40px;
+      /* background-color: aquamarine; */
+      margin: 0px;
+    
+  }
+  .list-container .price{
+    width: 250px;
+    margin-left: 50px;
+  .deal-btn{
+    background-color:rgb(79, 79, 225);
+    color: white;
+    width:70%;
+    padding: 3px 12px;
+    margin-left: 30px;
+    border-radius: 40px;
+    text-align: center;
+  } 
+  .view-btn{
+    background-color: #ef6614;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    width: 200px;
+    height: 40px;
+  }
+  .view-btn:hover{
+    font-size: 25px;
+    width: 210px;
+    height: 45px;
+  }
+  }
+.card-container{
+  /* width: 440px; */
+  /* margin: 0px; */
+  padding: 10px;  
+  background-color: white;
+  border-radius: 30px;
+
+}
+.card-container img{
+  width: 98%;
+  height: 250px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  border-radius: 30px;
+}
+.card-container .details p{
+  margin: 0px;  
+  padding-left: 10px;
+}
+.card-container .details h3{
+  padding-left: 0px;
+  margin: 0px;
+}
+.card-container .price{
+  padding-left: 30px;
+.deal-btn{
+  display: none;
+}
+.view-btn{
+  background-color: #ef6614;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  font-size: 24px;
+  width: 200px;
+  height: 50px;  
+  margin-left: 50px;
+  align-items: center;
+}
+.view-btn:hover{
+  font-size: 25px;
+  width: 210px;
+  height: 51px;
+}
+}

@@ -1,0 +1,204 @@
+/* ----------------------------------------------------Navbar-------------------------------- */
+.navbar {
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+}
+.logo {
+  height: 60px;
+}
+.dropdown {
+  position: absolute;
+  right: 45px;
+  font-size: 24px;
+}
+/* -------------------------------------Login------------------------------------------------ */
+.form-main-container {
+  min-height: 630px;
+}
+.form-container {
+  margin: auto;
+  max-width: 400px;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.register-link {
+  margin-top: 15px;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------Loading------------------------------------------ */
+.loading {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+}
+.loading img {
+  width: 100px;
+  /* margin: 50px auto; */
+}
+/* -----------------------------------------------------Banner------------------------------ */
+.home-banner {
+  width: 100%;
+  min-height: 650px;
+  background: url("../assets/img/home-banner.jpg") center / cover no-repeat;
+}
+.banner-col {
+  min-height: 650px;
+  background-color: rgb(0, 158, 96);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+}
+.query-div {
+  height: 550px;
+  min-width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+}
+.content-div { 
+  width: 90%;
+  height: 600px;
+}
+.quick-fact-div {
+  height: auto;
+  /* background:url("../assets/img/home-banner.jpg") center /cover no-repeat;     */
+  background: linear-gradient(rgba(0, 158, 95, 0.815), rgba(0, 158, 95, 0.848)),
+    url("../assets/img/home-banner.jpg") center / cover no-repeat;
+}
+
+/* ----------------------------------------------Rooms--------------------------------------- */
+.link-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid black;
+  background-color: rgb(180, 177, 172);
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer;
+}
+.link-btn:hover {
+  background: transparent;
+  font-weight: 500;
+  background-color: rgb(236, 229, 218);
+}
+/* --------------------------------------------------SinglePage------------------------------------- */
+.carousel-div {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel {
+  width: 100%;
+}
+.hotel-img {
+  width: 100%;
+  height: 400px;
+}
+.single-room {
+  padding: 5rem 0 0 0;
+}
+.single-room-images {
+  width: 50vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 50px;
+}
+.single-room-images img {
+  width: 100%;
+  display: block;
+}
+.single-room-info {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem auto;
+}
+.desc,
+.info {
+  margin: 1rem 0;
+}
+.desc h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.desc p {
+  line-height: 1.5;
+}
+.info h3,
+.info h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+
+.room-extras {
+  width: 80vw;
+  margin: 0 auto 3rem auto;
+}
+.room-extras h6 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.extras {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
